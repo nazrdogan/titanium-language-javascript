@@ -1,0 +1,18 @@
+{
+  "name": "titanium-language-javascript",
+  "main": "./lib/titanium-language-javascript",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "titanium-language-javascript:toggle"
+  },
+  "repository": "https://github.com/atom/titanium-language-javascript",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
