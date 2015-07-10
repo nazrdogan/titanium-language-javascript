@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "titanium-language-javascript:toggle"
   },
-  "repository": "https://github.com/atom/titanium-language-javascript",
+  "repository": "https://github.com/nazrdogan/titanium-language-javascript",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
