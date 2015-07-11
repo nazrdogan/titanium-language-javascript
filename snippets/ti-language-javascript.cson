@@ -2,7 +2,7 @@
   'Object Method':
     'prefix': 'kf'
     'body': '${1:method_name}: function (${2:attribute}) {\n\t$3\n}${4:,}'
-  'Object key — key: "value"':
+  'Object key — key: value':
     'prefix': 'kv'
     'body': '${1:key}: ${2:\'${3:value}\'}${4:, }'
   'Prototype':
@@ -105,20 +105,98 @@
     'prefix': 'class'
     'body': 'class ${1:ClassName} {\n\tconstructor($2) {\n\t\t$3\n\t}\n}'
   'Titanium.UI.2DMatrix':
-     'prefix':'ti.ui.2d'
-     'body':'var ${1:variableName}=Ti.UI.create2DMatrix({
-               rotate: 45
-             });'
+    'prefix':'ti2d'
+    'body':'var ${1:variableName}=Ti.UI.create2DMatrix({\n rotate:45 \n});'
   'Titanium.UI.3DMatrix':
-      'prefix':'ti.ui.3d'
-      'body':'var ${1:variableName}=Ti.UI.create3DMatrix();'
+    'prefix':'ti3d'
+    'body':'var ${1:variableName}=Ti.UI.create3DMatrix();'
   'Titanium.UI.ActivityIndicator':
-       'prefix':'ti.ui.activityIndicator'
-       'body':'var ${1:variableName} = Ti.UI.createActivityIndicator({});'
+    'prefix':'tiactivityIndicator'
+    'body':'var ${1:variableName} = Ti.UI.createActivityIndicator({});'
   'Titanium-Alert':
-         'prefix':'alert'
-         'body':'alert(\'{message}\');'
+    'prefix':'alert'
+    'body':'alert(\'{message}\');'
   'Titanium.UI.AlertDialog':
-         'prefix':'ti.alertdialog'
-         'body':'var ${1:variableName}= Ti.UI.createAlertDialog({\n cancel: 1,\n buttonNames: [\'Confirm\', \'Cancel\', \'Help\'], \n message: \'Would you like to delete the file?\',\n title: \'Delete\' \n });'
-          
+    'prefix':'tialertdialog'
+    'body':'var ${1:variableName}= Ti.UI.createAlertDialog({\n cancel: 1,\n buttonNames: [\'Confirm\', \'Cancel\', \'Help\'], \n message: \'Would you like to delete the file?\',\n title: \'Delete\' \n });'
+  'Titanium.UI.Button':
+    'prefix':'tibutton'
+    'body':'var  ${1:variableName} = Titanium.UI.createButton({\n title:\'Hello\',\n top:10,\n width:100,\n height:50 \n });'
+  'Titanium.UI.ButtonBar':
+    'prefix':'tibuttonbar'
+    'body':'var  ${1:variableName} = Titanium.UI.createButtonBar({\n labels:[\'One\', \'Two\', \'Three\'],\n backgroundColor:\'#336699\',\n top:50,\n style:Titanium.UI.iPhone.SystemButtonStyle.BAR,\n height:25,\n width:200 \n });'
+  'Titanium.UI.EmailDialog':
+    'prefix':'tiemaildialog'
+    'body':'var  ${1:variableName} = Ti.UI.createEmailDialog()\n  ${1:variableName}.subject = \'Hello from Titanium\';\n  ${1:variableName}.toRecipients = [\'foo@yahoo.com\'];\n  ${1:variableName}.messageBody = \'<b>Appcelerator Titanium Rocks!</b>\';\n var f = Ti.Filesystem.getFile(\'cricket.wav\'); \n  ${1:variableName}.addAttachment(f); \n  ${1:variableName}.open();'
+  'Titanium.UI.ImageView':
+    'prefix':'tiimageview'
+    'body':'var ${1:variableName} = Ti.UI.createImageView({\n image:\'/images/myimage.png\'});'
+  'Titanium.UI.Label':
+    'prefix':'tilabel'
+    'body':'var ${1:variableName} = Ti.UI.createLabel({\n color: \'#900\' \n ,font: { fontSize:48 },shadowColor: \'#aaa\', \n shadowOffset: {x:5, y:5}, \n shadowRadius: 3, \n text: \'A simple label\', \n textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER, \n top: 30, \n width: Ti.UI.SIZE, height: Ti.UI.SIZE \n });'
+  'Titanium.UI.ListItem':
+    'prefix':'tilistitem'
+    'body':'var listView = Ti.UI.createListView();'
+  'Titanium.UI.Notification':
+    'prefix':'tinotification'
+    'body':'var ${1:variableName} = Ti.UI.createNotification({ \n message:\'Please Stand By\', \n duration: Ti.UI.NOTIFICATION_DURATION_LONG \n }); \n ${1:variableName}.show();'
+  'Titanium.UI.Picker':
+    'prefix':'tipicker'
+    'body':'var ${1:variableName} = Ti.UI.createPicker({ \n top:50 \n }); \n var data = []; \n data[0]=Ti.UI.createPickerRow({title:\'Bananas\'});\n data[1]=Ti.UI.createPickerRow({title:\'Strawberries\'}); \n  ${1:variableName}.add(data); \n ${1:variableName}.selectionIndicator = true;'
+  'Titanium.UI.PickerColumn':
+    'prefix':'tipickercolumn'
+    'body': 'var ${1:variableName} = Ti.UI.createPickerColumn();'
+  'Titanium.UI.PickerRow':
+    'prefix':'tipickerrow'
+    'body':'var ${1:variableName} = Ti.UI.createPickerRow({ \n title:\'title\',\n font: {fontSize:30} \n });'
+  'Titanium.UI.ProgressBar':
+    'prefix':'tiprogressbar'
+    'body':'var ${1:variableName}= Ti.UI.createProgressBar({ \n top: 25, \n width: 250, \n min: 0, \n max: 10, \n value: 0, \n color: \'blue\', \n message: \'Downloading 0 of 10\',\n font: {fontSize: 14, fontWeight: \'bold\'}, \n style: Titanium.UI.iPhone.ProgressBarStyle.PLAIN, \n });'
+  'Titanium.UI.RefreshControl':
+    'prefix':'tirefreshcontrol'
+    'body':'var ${1:variableName} = Ti.UI.createRefreshControl({ \n tintColor:\'red\'});'
+  'Titanium.UI.ScrollableView':
+    'prefix':'tiscrollableview'
+    'body':'var view1= Ti.UI.createView({ \n backgroundColor:\'#123\' \n }); \n  var view2 = Ti.UI.createView({ backgroundColor:\'#246\' \n }); \n  var ${1:variableName} = Ti.UI.createScrollableView({ \n views:[view1,view2],\n showPagingControl:true \n });'
+  'Titanium.UI.ScrollView':
+    'prefix':'tiscrollview'
+    'body':'var${1:variableName} = Ti.UI.createScrollView({ \n showVerticalScrollIndicator: true, \n showHorizontalScrollIndicator: true, \n height: \'80%\', width: \'80%\'}); \n var view = Ti.UI.createView({ \n backgroundColor:\'#336699\', \n borderRadius: 10, \n top: 10, \n height: 2000,\n width: 1000 \n});'
+  'Titanium.UI.SearchBar':
+    'prefix':'tisearchbar'
+    'body':'var ${1:variableName} = Titanium.UI.createSearchBar({ \n barColor:\'#000\',\n showCancel:true, \n height:43, \n top:0, \n });'
+  'Titanium.UI.Slider':
+    'prefix':'tislider'
+    'body':'var ${1:variableName}= Titanium.UI.createSlider({ \n top: 50, \n min: 0, \n max: 100, \n width: \'100%\', \n value: 50 \n }); \n var label = Ti.UI.createLabel({\n text: $(1:variableName).value, \n width: \'100%\',top: 30, \n left: 0, \n textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER \n }); \n ${1:variableName}.addEventListener(\'change\', function(e) {  \n label.text = String.format(\'%3.1f\', e.value); \n });'
+  'Titanium.UI.Switch':
+    'prefix':'tiswitch'
+    'body':'var ${1:variableName} = Ti.UI.createSwitch({ \n value:true \n }); \n ${1:variableName}.addEventListener(\'change\',function(e){ Ti.API.info(\'Switch value: \' + basicSwitch.value); \n});'
+  'Titanium.UI.Tab':
+    'prefix':'titab'
+    'body':'var ${1:variableName}= Titanium.UI.createTab({ \n window:mywin, \n title:\'Hello\', \n icon:\'myicon.png\'}); \n ${1:variableName}.addTab(tab);'
+  'Titanium.UI.TabGroup':
+    'prefix':'titabgroup'
+    'body':'var  ${1:variableName}= Ti.UI.createTabGroup({ \n tabs:[tab1, tab2] \n }); \n tabGroup.open();'
+  'Titanium.UI.TableView':
+    'prefix':'titable'
+    'body':'var ${1:variableName} = Ti.UI.createTableView({ \n data: tableData \n });'
+  'Titanium.UI.TableViewRow':
+    'prefix':'titableviewrow'
+    'body':'var ${1:variableName} = Titanium.UI.createTableViewRow();'
+  'Titanium.UI.TextArea':
+    'prefix':'titextarea'
+    'body':'var ${1:variableName} = Ti.UI.createTextArea({ \n borderWidth: 2, \n borderColor: \'#bbb\', \n borderRadius: 5,color: \'#888\', \n font: {fontSize:20, fontWeight:\'bold\'}, \n keyboardType: Ti.UI.KEYBOARD_NUMBER_PAD, \n returnKeyType: Ti.UI.RETURNKEY_GO, \n textAlign: \'left\', \n value: \'I am a textarea\', \n top: 60, \n  width: 300, height : 70 \n });'
+  'Titanium.UI.TextField':
+    'prefix':'titextfield'
+    'body':'var ${1:variableName} = Ti.UI.createTextField({ \n borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, \n color: \'#336699\', \n top: 10, left: 10, \n width: 250, height: 60 \n});'
+  'Titanium.UI.View':
+    'prefix':'tiview'
+    'body':'var ${1:variableName} = Titanium.UI.createView({ \n borderRadius:10, \n backgroundColor:\'red\', \n width:50, \n height:50 \n });'
+  'Titanium.UI.WebView':
+    'prefix':'tiwebview'
+    'body':'var ${1:variableName} = Titanium.UI.createWebView({ \n url:\'http://www.appcelerator.com\' \n });'
+  'Titanium.UI.Window':
+     'prefix':'tiwindow'
+     'body':'var ${1:variableName}= Titanium.UI.createWindow();'
+  'Titanium.API.info':
+     'prefix':'info'
+     'body':'Ti.API.info(\'${1:message}\');'
