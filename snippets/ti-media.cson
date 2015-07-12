@@ -1,0 +1,25 @@
+'.source.js':
+  'Titanium.Media':
+    'prefix':'Media'
+    'body':'Media'
+  'Titanium.Media.Android':
+    'prefix':'Media.Android'
+    'body':'Media.Android'
+  'Titanium.Media.AudioPlayer':
+    'prefix':'Media.AudioPlayer'
+    'body':'Media.AudioPlayer'
+  'Titanium.Media.AudioRecorder':
+    'prefix':'Media.AudioRecorder'
+    'body':'Media.AudioRecorder'
+  'Titanium.Media.Item':
+    'prefix':'Media.Item'
+    'body':'Media.Item'
+  'Titanium.Media.MusicPlayer':
+    'prefix':'Media.MusicPlayer'
+    'body':'Media.MusicPlayer'
+  'Titanium.Media.Sound':
+    'prefix':'Media.Sound'
+    'body':'Media.Sound'
+  'Titanium.Media.VideoPlayer':
+    'prefix':'Media.VideoPlayer'
+    'body':'Media.VideoPlayer'

@@ -1,0 +1,16 @@
+'.source.js':
+  'Ti.API.debug':
+    'prefix': 'd'
+    'body': 'Ti.API.debug($1)'
+  'Ti.API.info':
+    'prefix': 'i'
+    'body': 'Ti.API.info($1)'
+  'Ti.API.log':
+    'prefix': 'l'
+    'body': 'Ti.API.log(\'${1:info}\',$1)'
+  'Ti.App.addEventListener':
+    'prefix': 'ae'
+    'body': 'Ti.App.addEventListener(\'${1:event}\', $0);'
+  'Ti.App.fireEvent':
+    'prefix': 'fe'
+    'body': 'Ti.App.fireEvent(\'${1:event}\'$0)'
