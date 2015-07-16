@@ -2,7 +2,7 @@
   "name": "titanium-language-javascript",
   "main": "./lib/titanium-language-javascript",
   "version": "0.45.0",
-  "description": "A short description of your package",
+  "description": "Appcelerator Titanium  Code Completion",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "titanium-language-javascript:toggle"
