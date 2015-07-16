@@ -1,7 +1,7 @@
 {
   "name": "titanium-language-javascript",
   "main": "./lib/titanium-language-javascript",
-  "version": "0.47.0",
+  "version": "0.48.0",
   "description": "Appcelerator Titanium  Code Completion",
   "keywords": [],
   "activationCommands": {
